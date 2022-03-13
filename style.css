@@ -16,7 +16,8 @@
   position: absolute;
   animation: fadeIn 1s;
   text-align: center;
-  font-family: "Sansita Swashed", cursive;
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
   color: blue;
 }
 .container2 {
