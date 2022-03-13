@@ -80,8 +80,8 @@ let speedUp = function () {
   gearThree.style = "animation: rotate 18s infinite linear;"
   gearFour.style = "animation: counterRotate 30s infinite linear;"
   gearFive.style = "animation: counterRotate 25s infinite linear;"
-  gearSix.style = "animation: rotate 20s infinite linear;"
-  gearSeven.style = "animation: counterRotate 40s infinite linear;"
+  gearSix.style = "animation: rotate 10s infinite linear;"
+  gearSeven.style = "animation: counterRotate 55s infinite linear;"
   gearSmaller.style = "animation: rotate 15s infinite linear;"
   gearSmallest.style = "animation: rotate 8s infinite linear;"
   }, 1000);
