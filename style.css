@@ -1,0 +1,473 @@
+.largeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container1 {
+  display: flex;
+  height: 620px;
+  width: 1000px;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  animation: fadeIn 1s;
+  text-align: center;
+  font-family: "Sansita Swashed", cursive;
+  color: blue;
+}
+.container2 {
+  display: flex;
+  height: 20vh;
+}
+.generatorSmall {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border: 10px dashed white;
+  background-color: rgb(233, 87, 226);
+  border-radius: 360%;
+  animation: counterRotate 8s infinite linear;
+  top: 90px;
+  left: 15px;
+  /* animation: fadeIn 3s; */
+}
+.generatorOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 175px;
+  width: 175px;
+  border: 15px dashed white;
+  background-color: rgb(84, 82, 206);
+  border-radius: 360%;
+  animation: rotate 19s infinite linear;
+  top: 135px;
+  left: 40px;
+  /* box-shadow: 0 0 25px rgb(84, 82, 206); */
+  /* animation: fadeIn 1s; */
+}
+
+.generatorTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 15px dashed white;
+  background-color: rgb(236, 92, 92);
+  border-radius: 360%;
+  animation: counterRotate 30s infinite linear;
+  left: 235px;
+  top: 1px;
+  /* box-shadow: 0 0 25px rgb(236, 92, 92); */
+  /* animation: move 50s linear 2s infinite; */
+}
+
+.generatorThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  /* border: 15px dashed rgb(243, 245, 125); */
+  border: 15px dashed white;
+  background-color: yellow;
+  border-radius: 360%;
+  animation: rotate 18s infinite linear;
+  bottom: 370px;
+  left: 565px;
+  /* box-shadow: 0 0 25px rgb(243, 245, 125); */
+  /* animation: fadeIn 3s; */
+}
+.generatorFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 325px;
+  height: 325px;
+  border: 15px dashed white;
+  background-color: rgb(178, 248, 171);
+  border-radius: 360%;
+  animation: counterRotate 30s infinite linear;
+  left: -150px;
+  top: 315px;
+  /* box-shadow: 0 0 25px rgb(243, 245, 125); */
+  /* animation: fadeIn 3s; */
+}
+.generatorFive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: 15px dashed white;
+  background-color: rgb(148, 58, 140);
+  border-radius: 360%;
+  animation: counterRotate 25s infinite linear;
+  top: 355px;
+  left: 260px;
+  /* box-shadow: 0 0 25px rgb(243, 245, 125); */
+  /* animation: fadeIn 3s; */
+}
+.generatorSix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 145px;
+  height: 145px;
+  border: 15px dashed white;
+  background-color: rgb(75, 85, 221);
+  border-radius: 360%;
+  animation: rotate 20s infinite linear;
+  right: 0px;
+  top: 120px;
+  /* box-shadow: 0 0 25px rgb(243, 245, 125); */
+  /* animation: fadeIn 3s; */
+}
+.generatorSeven {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 390px;
+  height: 390px;
+  border: 15px dashed white;
+  background-color: coral;
+  border-radius: 360%;
+  animation: counterRotate 40s infinite linear;
+  right: -15px;
+  top: 270px;
+  /* box-shadow: 0 0 25px rgb(243, 245, 125); */
+  /* animation: fadeIn 3s; */
+}
+.generatorSmaller {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  height: 125px;
+  width: 125px;
+  border: 10px dashed white;
+  background-color: rgb(131, 243, 187);
+  border-radius: 360%;
+  animation: rotate 15s infinite linear;
+  bottom: 200px;
+  left: 480px;
+}
+.generatorSmaller:hover {
+  transform: scale(1.1);
+}
+.generatorSmaller:after {
+  transform: scale(0.98);
+}
+.generatorSmallest {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border: 10px dashed white;
+  background-color: rgb(131, 243, 187);
+  border-radius: 360%;
+  animation: rotate 8s infinite linear;
+  bottom: 30px;
+  left: 195px;
+}
+
+.firstPull.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  /* animation: fadeInPic 0.5s; */
+  background-size: cover;
+  /* opacity: 0.8; */
+  animation: createBox 1s;
+}
+.secondPull.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  /* animation: fadeInPic 0.5s; */
+  background-size: cover;
+  animation: createBox 1s;
+}
+.thirdPull.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.fourthPull.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+
+.fifthPull.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.sixthPull.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.seventhPull.fadeIn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+  font-size: 8px;
+}
+.generatorSeven:hover {
+  transform: scale(2);
+  z-index: 3;
+  animation: createBox 20s;
+}
+
+.one.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.two.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.three.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.four.fadeIn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.five.fadeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  /* border: 4px solid #8d8484; */
+  border-radius: 360%;
+  animation: createBox 1s;
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes counterRotate {
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes createBox {
+  from {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  to {
+    width: 70%;
+    height: 70%;
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInPic {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes glowPink {
+  from {
+    text-shadow: 0 0 5px #f7b2eb, 0 0 10px #f7b2eb, 0 0 15px #f7b2eb,
+      0 0 20px #f7b2eb, 0 0 25px #f7b2eb, 0 0 30px #f7b2eb, 0 0 35px #f7b2eb;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f7b2eb,
+      0 0 40px #f7b2eb, 0 0 50px #f7b2eb, 0 0 60px #f7b2eb, 0 0 70px #f7b2eb;
+  }
+}
