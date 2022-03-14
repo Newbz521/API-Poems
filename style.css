@@ -1,5 +1,5 @@
 .body {
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
 }
 .largeContainer {
   display: flex;
@@ -8,6 +8,7 @@
   align-items: center;
   height: 100vh;
   width: 100%;
+  background-color: rgb(247, 219, 255);
 }
 .container1 {
   display: flex;
@@ -95,7 +96,7 @@
   position: absolute;
   height: 75px;
   width: 75px;
-  border: 10px dashed white;
+  border: 10px dashed rgb(247, 219, 255);
   background-color: rgb(233, 87, 226);
   border-radius: 360%;
   animation: counterRotate 8s infinite linear;
@@ -111,7 +112,7 @@
   position: absolute;
   height: 175px;
   width: 175px;
-  border: 15px dashed white;
+  border: 15px dashed rgb(247, 219, 255);
   background-color: rgb(84, 82, 206);
   border-radius: 360%;
   animation: rotate 19s infinite linear;
@@ -129,7 +130,7 @@
   align-items: center;
   width: 300px;
   height: 300px;
-  border: 15px dashed white;
+  border: 15px dashed rgb(247, 219, 255);
   background-color: rgb(236, 92, 92);
   border-radius: 360%;
   animation: counterRotate 30s infinite linear;
@@ -148,7 +149,7 @@
   width: 200px;
   height: 200px;
   /* border: 15px dashed rgb(243, 245, 125); */
-  border: 15px dashed white;
+  border: 15px dashed rgb(247, 219, 255);
   background-color: yellow;
   border-radius: 360%;
   animation: rotate 18s infinite linear;
@@ -165,7 +166,7 @@
   align-items: center;
   width: 325px;
   height: 325px;
-  border: 15px dashed white;
+  border: 15px dashed rgb(247, 219, 255);
   background-color: rgb(178, 248, 171);
   border-radius: 360%;
   animation: counterRotate 30s infinite linear;
@@ -182,7 +183,7 @@
   align-items: center;
   width: 250px;
   height: 250px;
-  border: 15px dashed white;
+  border: 15px dashed rgb(247, 219, 255);
   background-color: rgb(148, 58, 140);
   border-radius: 360%;
   animation: counterRotate 25s infinite linear;
@@ -199,7 +200,7 @@
   align-items: center;
   width: 120px;
   height: 120px;
-  border: 15px dashed rgb(0, 0, 0, 0);
+  border: 15px dashed rgb(247, 219, 255);
   background-color: rgb(75, 85, 221);
   border-radius: 360%;
   animation: rotate 10s infinite linear;
@@ -216,7 +217,7 @@
   align-items: center;
   width: 500px;
   height: 500px;
-  border: 15px dashed white;
+  border: 15px dashed rgb(247, 219, 255);
   background-color: coral;
   border-radius: 360%;
   animation: counterRotate 55s infinite linear;
@@ -227,11 +228,11 @@
 }
 .generatorSmaller {
   display: flex;
-  background-color: white;
+  /* background-color: white; */
   position: absolute;
   height: 125px;
   width: 125px;
-  border: 10px dashed white;
+  border: 10px dashed rgb(247, 219, 255);
   background-color: rgb(131, 243, 187);
   border-radius: 360%;
   animation: rotate 15s infinite linear;
@@ -246,11 +247,11 @@
 }
 .generatorSmallest {
   display: flex;
-  background-color: white;
+  /* background-color: white; */
   position: absolute;
   height: 60px;
   width: 60px;
-  border: 10px dashed white;
+  border: 10px dashed rgb(247, 219, 255);
   background-color: rgb(131, 243, 187);
   border-radius: 360%;
   animation: rotate 8s infinite linear;
