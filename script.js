@@ -45,13 +45,6 @@ let speedUp = function () {
   fifth.classList.remove("fadeIn")
   sixth.classList.remove("fadeIn")
   seventh.classList.remove("fadeIn")
-  // grabOne()
-  // grabTwo()
-  // grabThree()
-  // grabFour()
-  // grabFive()
-  // grabSix()
-  // grabSeven()
   setTimeout(getCharacters(), 500);
 
   setTimeout(function () {
@@ -98,28 +91,28 @@ let getCharacters = function () {
     .then(response => response.json())
     .then(results => {
       let charResults = [];
-      console.log(results)
       for (let i = 0; i < results.length; i++) {
         charResults.push(results[Math.floor(Math.random() * results.length)])
       }
+      console.log(charResults)
 //Give each gear a random char picture
       for (let i = 0; i < allContent.length-1; i++) {
         allContent[i].style = `background-image: url(${charResults[i].images.main})`
 //Give each character a profile description
         allGears[i].addEventListener("click", function () {
-          seventh.classList.remove("fadeIn")
-          setTimeout(poems[0].innerHTML = `Name: ${ charResults[i].name.first } ${ charResults[i].name.middle } ${ charResults[i].name.last }
-            <br> Species: ${charResults[i].species} <br> Occupation: ${ charResults[i].occupation }`, 200)
+          let voice = window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${charResults[i].sayings[1]}`));
+          voice();
+            seventh.classList.remove("fadeIn")
+          poems[0].innerHTML = `Name: ${ charResults[i].name.first } ${ charResults[i].name.middle } ${ charResults[i].name.last }
+            <br> Species: ${charResults[i].species} <br> Occupation: ${ charResults[i].occupation } <br> Age: ${charResults[i].age}` 
           setTimeout(function () {
             seventh.classList.add("fadeIn")
           }, 200);
         })
       }
+     
     })
 }
- 
-
-
 let clearPoems = function () {
   for (let i = 0; i < allContent.length; i++) {
     allContent[i].innerHTML = " ";
