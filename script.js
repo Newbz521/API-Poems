@@ -52,7 +52,7 @@ let speedUp = function () {
   // grabFive()
   // grabSix()
   // grabSeven()
-  setTimeout(getPoems(), 500);
+  setTimeout(getCharacters(), 500);
 
   setTimeout(function () {
     first.classList.add("fadeIn")
@@ -93,23 +93,33 @@ gearSmaller.addEventListener("click", speedUp)
 let poems = document.querySelectorAll(".poem")
 console.log(poems)
 
-let getPoems = function () {
-  fetch("https://www.poemist.com/api/v1/randompoems")
+let getCharacters = function () {
+  fetch("https://api.sampleapis.com/futurama/characters")
     .then(response => response.json())
     .then(results => {
-      for (let i = 0; i < results.length; i++) {
-        allContent[i].innerText = results[i].title
+      let charResults = [];
+      for (let i = 0; i < 6; i++) {
+        charResults.push(results[Math.floor(Math.random() * results.length)])
+      }
+      // console.log(charResults)
+      for (let i = 0; i < 6; i++) {
+        allContent[i].style = `background-image: url(${charResults[i].images.main})`
+
         allGears[i].addEventListener("click", function () {
           seventh.classList.remove("fadeIn")
-          setTimeout(poems[0].innerHTML = results[i].content, 200)
+
+          setTimeout(poems[0].innerHTML = `Name: ${ charResults[i].name.first } ${ charResults[i].name.middle }  ${ charResults[i].name.last }
+            <br> Species: ${charResults[i].species} <br> Occupation: ${ charResults[i].occupation }`, 200)
+
           setTimeout(function () {
             seventh.classList.add("fadeIn")
           }, 200);
-        });
+        })
       }
-      console.log(results)
     })
 }
+ 
+
 
 let clearPoems = function () {
   for (let i = 0; i < allContent.length; i++) {
