@@ -100,14 +100,16 @@ let getCharacters = function () {
         allContent[i].style = `background-image: url(${charResults[i].images.main})`
 //Give each character a profile description
         allGears[i].addEventListener("click", function () {
-          let voice = window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${charResults[i].sayings[1]}`));
-          voice();
-            seventh.classList.remove("fadeIn")
+          seventh.classList.remove("fadeIn")
           poems[0].innerHTML = `Name: ${ charResults[i].name.first } ${ charResults[i].name.middle } ${ charResults[i].name.last }
-            <br> Species: ${charResults[i].species} <br> Occupation: ${ charResults[i].occupation } <br> Age: ${charResults[i].age}` 
+          <br> Species: ${charResults[i].species} <br> Occupation: ${ charResults[i].occupation } <br> Age: ${charResults[i].age}` 
           setTimeout(function () {
-            seventh.classList.add("fadeIn")
-          }, 200);
+          seventh.classList.add("fadeIn")
+          }, 100);
+          
+          let voice = window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${charResults[i].sayings[0]}`));
+          voice();
+
         })
       }
      
