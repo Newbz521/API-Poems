@@ -98,19 +98,18 @@ let getCharacters = function () {
     .then(response => response.json())
     .then(results => {
       let charResults = [];
-      for (let i = 0; i < 6; i++) {
+      console.log(results)
+      for (let i = 0; i < results.length; i++) {
         charResults.push(results[Math.floor(Math.random() * results.length)])
       }
-      // console.log(charResults)
-      for (let i = 0; i < 6; i++) {
+//Give each gear a random char picture
+      for (let i = 0; i < allContent.length-1; i++) {
         allContent[i].style = `background-image: url(${charResults[i].images.main})`
-
+//Give each character a profile description
         allGears[i].addEventListener("click", function () {
           seventh.classList.remove("fadeIn")
-
-          setTimeout(poems[0].innerHTML = `Name: ${ charResults[i].name.first } ${ charResults[i].name.middle }  ${ charResults[i].name.last }
+          setTimeout(poems[0].innerHTML = `Name: ${ charResults[i].name.first } ${ charResults[i].name.middle } ${ charResults[i].name.last }
             <br> Species: ${charResults[i].species} <br> Occupation: ${ charResults[i].occupation }`, 200)
-
           setTimeout(function () {
             seventh.classList.add("fadeIn")
           }, 200);
