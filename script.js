@@ -106,10 +106,9 @@ let getCharacters = function () {
           setTimeout(function () {
           seventh.classList.add("fadeIn")
           }, 100);
-          
+        
           let voice = window.speechSynthesis.speak(new SpeechSynthesisUtterance(`${charResults[i].sayings[0]}`));
           voice();
-
         })
       }
      
