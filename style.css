@@ -139,7 +139,9 @@
   /* box-shadow: 0 0 25px rgb(236, 92, 92); */
   /* animation: move 50s linear 2s infinite; */
 }
-
+.hi:hover {
+  transform: scale(0.93);
+}
 .generatorThree {
   display: flex;
   flex-direction: row;
